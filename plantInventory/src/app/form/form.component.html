@@ -1,0 +1,12 @@
+<div id="enterName"><label  id="labelName" for="nombreForm">Enter your plant name:</label>
+    <input type="text" id="nombreForm" [(ngModel)]="newPlantName"><br>
+</div>
+
+<p>
+    <label for="radio1"><img id="arbusto" src="assets/bush.png" alt="bush"></label>
+    <input type="radio" id="radio1" value="bush" name="plantType" [(ngModel)]="newPlantType">
+    <label for="radio2"><img id="arbol" src="assets/tree.png" alt="tree"></label>
+    <input type="radio" id="radio2" value="tree" name="plantType" [(ngModel)]="newPlantType">
+</p>
+<div id="botones"><app-boton-crear (click)="reset()" texto="Reset" color="red"></app-boton-crear><app-boton-crear
+        (click)="addPlant()" texto="Añadir planta" color="lightblue"></app-boton-crear></div>

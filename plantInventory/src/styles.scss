@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: sans-serif;
+}
+
+#arbusto {
+    height: 100px;
+}
+
+#arbol {
+    height: 100px;
+}
+
+body {
+    font-family: 'Fasthand', cursive;
+    background-image: url(./assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+
+}

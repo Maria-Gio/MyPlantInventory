@@ -1,0 +1,18 @@
+<div id="title">
+  <h1>{{title}}</h1>
+  <h1>My garden</h1>
+</div>
+
+<div id="form">
+  <form [plants]="plants"></form>
+</div>
+
+<div id="lista">
+  <ul>
+    <li *ngFor="let plant of plants" [class.fave]="plant.fave ===true">
+
+      <muestra-lista id="formApp" [plant]="plant" (eventoBorrar)="borrar(plant)"
+        (eventoCompletar)="cambiarEstado($event,plant)"></muestra-lista>
+    </li>
+  </ul>
+</div>
